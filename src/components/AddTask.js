@@ -1,4 +1,4 @@
-// src/components/AddTask.js
+
 import React, { useState } from 'react';
 
 const AddTask = ({ addTask }) => {
@@ -26,3 +26,4 @@ const AddTask = ({ addTask }) => {
 };
 
 export default AddTask;
+

@@ -1,4 +1,4 @@
-// src/App.js
+
 import React, { useState } from 'react';
 import TaskList from './components/TaskList';
 import AddTask from './components/AddTask';
@@ -9,7 +9,6 @@ function App() {
     { id: 1, name: 'Apprendre React', completed: false },
     { id: 2, name: 'Créer une application', completed: false }
   ]);
-
   const addTask = (taskName) => {
     const newTask = {
       id: tasks.length + 1,
