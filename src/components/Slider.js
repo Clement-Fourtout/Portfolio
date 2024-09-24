@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import '../style/Slider.css'; // N'oubliez pas d'ajouter les styles
+import '../style/Slider.css'; 
 import image1 from '../style/Images/Zoo-arcadia.png';
 import image2 from '../style/Images/Zoo-arcadia 2.png';
 import image3 from '../style/Images/Zoo-arcadia 3 .png';
@@ -26,7 +26,7 @@ const Slider = () => {
           key={index}
           src={image}
           alt={`Slide ${index + 1}`}
-          className={`slide ${index === currentIndex ? 'active' : ''}`} // Applique la classe active
+          className={`slide ${index === currentIndex ? 'active' : ''}`}
         />
       ))}
     </div>
@@ -34,3 +34,4 @@ const Slider = () => {
 };
 
 export default Slider;
+

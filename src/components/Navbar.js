@@ -1,6 +1,6 @@
-// src/components/Navbar.js
+
 import React from 'react';
-import '../style/Navbar.css';  // Nous ajouterons du CSS plus tard
+import '../style/Navbar.css'; 
 
 const Navbar = () => {
   return (
@@ -18,3 +18,4 @@ const Navbar = () => {
 };
 
 export default Navbar;
+

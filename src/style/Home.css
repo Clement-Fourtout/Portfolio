@@ -1,38 +1,40 @@
-/* src/components/Home.css */
 .welcome-section {
-  height: 70vh; /* Ajuste la hauteur pour qu'elle prenne moins de place */
-  background-image: url('/src/style/Images/Perso.jpg');
-  background-size: contain; /* L'image reste entièrement visible */
-  background-repeat: no-repeat; /* Pas de répétition de l'image */
-  background-position: center; /* L'image reste centrée */
+  height: 100vh; 
+  background-image: url('/src/style/Images/Perso.jpg'); 
+  background-size: contain; 
+  background-repeat: no-repeat; 
+  background-position: center; 
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.6);
-  border-radius: 40%;
-  animation: fadeIn 1s ease-in-out;
+  justify-content: flex-end; 
+  align-items: flex-end; 
+  position: relative; 
+}
+
+.welcome-message-container {
+  width: 100%; 
+  text-align: center; 
+  padding: 1rem; 
+  z-index: 1; 
+  animation: fadeIn 2s ease-in-out; 
 }
 
 .welcome-message {
-  padding-top: 30vh;
-  font-size: 3.5rem;
-  background-color: #017bc2;
-  background-clip: text;
-  color: transparent;
-  animation: fadeIn 2s ease-in-out;
+  font-size: 3rem;
+  color: white; 
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
+  margin-bottom: 0.5rem; 
+  
 }
 
 .subtitle {
   font-size: 1.5rem;
   color: #ffcc00;
-  margin-top: 1rem;
-  animation: fadeIn 3s ease-in-out;
-  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Ombre plus légère */
+  margin-bottom: 5rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); 
+
 }
 
-/* Animation en fondu */
+/* Animation fadeIn */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -41,5 +43,13 @@
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+/* Media Queries pour les petits écrans */
+@media (max-width: 768px) {
+  .welcome-section {
+    background-size: cover; 
+    justify-content: flex-end; 
   }
 }

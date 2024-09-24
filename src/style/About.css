@@ -1,8 +1,7 @@
-/* src/components/About.css */
 .about-section {
   padding: 50px 20px;
-  background-color: #f0f0f0; /* Couleur de fond douce */
-  text-align: center; /* Centre le texte */
+  background-color: #f0f0f0; 
+  text-align: center; 
   margin-top: 5vh;
 }
 
@@ -23,6 +22,6 @@
 }
 
 .about-section ul {
-  list-style-type: none; /* Enlève les puces */
+  list-style-type: none; 
   padding: 0;
 }

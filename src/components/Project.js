@@ -1,4 +1,3 @@
-// src/components/Projects.js
 import React from 'react';
 import '../style/Project.css';
 import Slider from './Slider';

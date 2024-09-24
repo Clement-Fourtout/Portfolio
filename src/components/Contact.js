@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import '../style/Contact.css';
+import '../style/Wrapper.css';
 
 export default function Contact() {
   const [title, setTitle] = useState('');
