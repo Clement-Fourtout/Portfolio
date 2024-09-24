@@ -1,0 +1,31 @@
+
+/* Slider.css */
+.slider {
+  position: relative;
+  width: 100%;
+  height: 70vh; /* Ajustez selon vos besoins */
+  overflow: hidden;
+  margin-top: 2vh;
+  
+}
+
+.slide {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0; /* Démarre avec une opacité de 0 */
+  transition: opacity 2s ease-in-out; /* Transition douce */
+  position: absolute; /* Permet d'empiler les images */
+  top: 0;
+  left: 0;
+}
+
+.slide.active {
+  opacity: 1; /* Visible quand la classe 'active' est appliquée */
+}
+@media (max-width: 600px) {
+  .slide {
+    height: 200px; /* Ajustez pour les mobiles */
+    object-fit: contain; /* Affiche l'image entière sur mobile */
+  }
+}
